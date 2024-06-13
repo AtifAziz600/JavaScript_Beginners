@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Cart Quantity</h3>
+    <button onclick="console.log(`Cart Quantity is : ${CartQuantity}`)">Show Quantity</button>
+    <button onclick="CartQuantity = CartQuantity + 1;
+    // CartQuantity++; ata dileo 1 ta kore add cart korbe 
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">Add Cart</button>
+    <button onclick="CartQuantity +=2;
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">+2</button>
+    <button onclick="CartQuantity +=3;
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">+3</button>
+    <button onclick="CartQuantity +=4;
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">+4</button>
+        <button onclick="CartQuantity +=5;
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">+5</button>
+    <button onclick="CartQuantity -=2;
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">-2</button>
+        <button onclick="CartQuantity -=3;
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">-3</button>
+    <button onclick="CartQuantity = 0;
+    console.log('Cart Reset')
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">Reset Cart</button>
+     <button onclick="CartQuantity = CartQuantity - 1;
+    // CartQuantity++; ata dileo 1 ta kore add cart korbe 
+    console.log(`Cart Quantity: ${CartQuantity}`)
+    ">Remove Cart</button>
+    <script>
+        let CartQuantity = 0;
+    </script>
+</body>
+</html>
