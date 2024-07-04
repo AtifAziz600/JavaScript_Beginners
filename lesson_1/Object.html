@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creating JavaScript Objects</h1>
+    <h2>Using an Object Literal</h2>
+    <p id="demo"></p>
+    <h1 id="fullName"></h1>
+    <h2 id="repo"></h2>
+    <h3 id="epo"></h3>
+    <script>
+        var firstName = "Atif";
+        var lastName = " Aziz"
+        var age = 24;
+        var eyeColor = " blue";
+        document.getElementById("demo").innerHTML = firstName + lastName + " and age is " +  age  + " eye color is " + eyeColor;
+
+        const person  = {
+            first: "Atif",
+            last: "Aziz",
+
+            fullName: function() {
+                return this.first + " " + this.last;
+            }
+        }
+        document.getElementById("fullName").innerHTML = person.fullName();
+
+        const yourInfo = {
+            name: "Aziz",
+            age: 24,
+
+        }
+        document.getElementById("repo").innerHTML = yourInfo["name"] + " age is " + yourInfo["age"] + " it is all of my info"
+
+        const deleteObject = {
+            name: "Aziz",
+            age: 24,
+            userName: "aziz@gmail.com"
+        }
+        delete deleteObject.userName;
+
+        document.getElementById("epo").innerHTML = deleteObject.name + " is " + deleteObject.age + " old " + " and username " + deleteObject.userName
+    </script>
+</body>
+</html>
