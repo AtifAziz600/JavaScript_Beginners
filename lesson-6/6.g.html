@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      const randomNumber = Math.random();
+      const result = randomNumber < 0.5 ? 'heads' : 'tails';
+
+      const guess = 'heads';
+      console.log(guess === result ? 'You win' : 'You Lose');
+      const guess1 = 'tails';
+      console.log(guess1 === result ? 'You win' : 'You lose');
+      document.getElementById('demo').innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+     <script>
+      const hours = 9;
+      const name = ' Atif';
+      let greetings = '';
+
+      if (hours >= 6 && hours <= 12) {
+        greetings = 'Good Morning' + name
+      } else if (hours >= 13 && hours <= 19) {
+        greetings = 'Good Afternoon' + name
+      } else {
+        greetings = 'Good Night' + name
+      }
+      document.getElementById("demo").innerHTML = greetings;
+    </script>
+</body>
+</html>

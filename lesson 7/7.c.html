@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="demo"></h3>
+    <script>
+        function greet(name) {
+            if (name) {
+                return "Hi there"
+            }
+            else {
+                return "Hi" + name;
+            }
+        }
+        const greetings1 = greet("Atif");
+        const greetings2 = greet("Aziz");
+        document.getElementById("demo").innerHTML = greetings1 + "<br>" + greetings2;
+    </script>
+</body>
+</html>
