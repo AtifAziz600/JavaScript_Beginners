@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="id"></p>
     <script>
-        const todoList = [
-            'Make array',
-            'make loop',
-            'make function',
-        ];
+      const todoList = ["Make array", "make loop", "make function"];
 
-        for (let index = 0; index <= todoList.length - 1; index++) {
-            const value = todoList[index]
-            console.log(index);
-            console.log(value);
-        }
-        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      for (let index = 0; index <= todoList.length - 1; index++) {
+        const value = todoList[index];
+        console.log(index);
+        console.log(value);
+      }
 
-let i = 0;
-let text = "";
-while (cars[i]) {
-  text += cars[i] + "<br>";
-  i++;
-}
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
 
-document.getElementById("demo").innerHTML = text;
+      let i = 0;
+      let text = "";
+      while (cars[i]) {
+        text += cars[i] + "<br>";
+        i++;
+      }
+
+      document.getElementById("demo").innerHTML = text;
     </script>
-</body>
+  </body>
 </html>
